@@ -4,11 +4,10 @@ let pedidoWpp = document.getElementById("pedido")
 let meals = document.querySelectorAll(".meal")
 let descriptions = document.querySelectorAll(".description")
 let prices = document.querySelectorAll(".price")
-let pedidoCompleto = "Olá, bom dia, poderia me ajudar com meu pedido?\n\n"
+let pedidoCompleto = "Olá, bom dia, poderia me ajudar com meu pedido?\n\nEu gostaria de:\n"
 let buttonLimpar = document.getElementById("limpar")
 
 pedidoWpp.addEventListener("click", function (e) {
-    let selecionados = 0
     let marmita = ""
     let descricao = ""
     let preco = ""
@@ -30,7 +29,7 @@ pedidoWpp.addEventListener("click", function (e) {
                 // console.log(prices[0].textContent);
                 preco = prices[0].textContent
 
-                pedidoCompleto += `Eu gostaria de:\n*${marmita} - ${preco}*\n`
+                pedidoCompleto += `*${marmita} - ${preco}*\n`
                 console.log(pedidoCompleto)
                 msgWhatsapp = pedidoCompleto
                 msgWhatsapp = window.encodeURIComponent(msgWhatsapp)
@@ -49,7 +48,7 @@ pedidoWpp.addEventListener("click", function (e) {
                 // console.log(prices[1].textContent);
                 preco = prices[1].textContent
 
-                pedidoCompleto += `Eu gostaria de:\n*${marmita} - ${preco}*\n`
+                pedidoCompleto += `*${marmita} - ${preco}*\n`
                 console.log(pedidoCompleto)
                 msgWhatsapp = pedidoCompleto
                 msgWhatsapp = window.encodeURIComponent(msgWhatsapp)
@@ -68,7 +67,7 @@ pedidoWpp.addEventListener("click", function (e) {
                 // console.log(prices[2].textContent);
                 preco = prices[2].textContent
 
-                pedidoCompleto += `Eu gostaria de:\n*${marmita} - ${preco}*\n`
+                pedidoCompleto += `*${marmita} - ${preco}*\n`
                 console.log(pedidoCompleto)
                 msgWhatsapp = pedidoCompleto
                 msgWhatsapp = window.encodeURIComponent(msgWhatsapp)
@@ -87,7 +86,7 @@ pedidoWpp.addEventListener("click", function (e) {
                 // console.log(prices[3].textContent);
                 preco = prices[3].textContent
 
-                pedidoCompleto += `Eu gostaria de:\n*${marmita} - ${preco}*\n`
+                pedidoCompleto += `*${marmita} - ${preco}*\n`
                 console.log(pedidoCompleto)
                 msgWhatsapp = pedidoCompleto
                 msgWhatsapp = window.encodeURIComponent(msgWhatsapp)
