@@ -1,129 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marmitaria Teresinha</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sacramento&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script type="text/javascript" src="./index.js" defer=""></script>
-    <link rel="stylesheet" href="./assets/styles/index.css" />
-  </head>
 
-  <body>
-    <header>
-      <h1><img src="./assets/img/logo.png" alt="" /></h1>
-      <h2>A <span>melhor</span> comida caseira da região!</h2>
-      <p>Funcionamos de <span>domingo a domingo</span>.</p>
-    </header>
-    <main>
-      <section class="brunch">
-        <h3>Marmitas</h3>
-        <div class="list-cardapio">
-          <ul>
-            <li>
-              <div class="details-cardapio">
-                <h4 class="meal">Fígado assado</h4>
-                <img class="meal-img" src="" alt="Marmita fígado" />
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Marmitaria Terezinha - A melhor comida caseira da região!">
+  <meta property="og:image" content="./assets/img/logo.png" />
+  <title>Marmitaria Terezinha</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/styles/index.css" />
+  <link rel="shortcut icon" href="./assets/img/favicon02.png" type="image/x-icon">
+</head>
 
+<body onload="resetConfig()">
+  <header>
+    <h1><img src="./assets/img/logo.png" alt="Marmitaria Terezinha - Logo" /></h1>
+    <h2>A <span>melhor</span> comida caseira da região!</h2>
+    <p>Funcionamos de <span>domingo a domingo</span>.</p>
+  </header>
+  <main>
+    <section class="brunch">
+      <h3>Marmitas</h3>
+      <div class="list-cardapio">
+        <ul>
+
+          <li class="item-cardapio">
+            <div class="details-cardapio">
+              <h4 class="meal" id="meal-01">Frango ao molho</h4>
+              <p class="description" id="description-01">
+                Arroz branco, macarrão, feijão carioca, farofa e salada verde.
+              </p>
+            </div>
+            <div class="price-cardapio">
               <strong class="price">R$ 12,00</strong>
-            </li>
+              <input type="checkbox" name="itemCardapio" id="marmita01">
+            </div>
+          </li>
 
-            <li>
-              <div class="details-cardapio">
-                <h4 class="meal">Linguiça assada</h4>
-                <img class="meal-img" src="" alt="Marmita linguiça" />
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-              </div>
-
+          <li class="item-cardapio">
+            <div class="details-cardapio">
+              <h4 class="meal">Carne moída</h4>
+              <p class="description">
+                Arroz branco, macarrão, feijão carioca, farofa e salada verde.
+              </p>
+            </div>
+            <div class="price-cardapio">
               <strong class="price">R$ 12,00</strong>
-            </li>
+              <input type="checkbox" name="itemCardapio" id="marmita02">
+            </div>
+          </li>
 
-            <li>
-              <div class="details-cardapio">
-                <h4 class="meal">Bisteca de boi assado</h4>
-                <img
-                  class="meal-img"
-                  src=""
-                  alt="Marmita bisteca de boi assado"
-                />
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-              </div>
-
+          <li class="item-cardapio">
+            <div class="details-cardapio">
+              <h4 class="meal">Fígado assado</h4>
+              <p class="description">
+                Arroz branco, macarrão, feijão carioca, farofa e salada verde.
+              </p>
+            </div>
+            <div class="price-cardapio">
               <strong class="price">R$ 12,00</strong>
-            </li>
+              <input type="checkbox" name="itemCardapio" id="marmita03">
+            </div>
+          </li>
 
-            <li>
-              <div class="details-cardapio">
-                <h4 class="meal">Bife ao molho</h4>
-                <img class="meal-img" src="" alt="Marmita bife ao molho" />
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-              </div>
-
+          <li class="item-cardapio">
+            <div class="details-cardapio">
+              <h4 class="meal">Peixe assado</h4>
+              <p class="description">
+                Arroz branco, macarrão, feijão carioca, farofa e salada verde.
+              </p>
+            </div>
+            <div class="price-cardapio">
               <strong class="price">R$ 12,00</strong>
-            </li>
-          </ul>
-        </div>
-      </section>
+              <input type="checkbox" name="itemCardapio" id="marmita04">
+            </div>
+          </li>
 
-      <section class="brunch">
-        <h3>Bebidas</h3>
-        <div class="list-cardapio">
-          <ul>
-            <li>
-              <div class="details-cardapio">
-                <h4 class="meal">Coca-Cola lata</h4>
-                <img class="meal-img" src="" alt="coca-cola lata" />
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-              </div>
+        </ul>
+      </div>
+      <div class="btnLimpar">
+        <span id="limpar">Desmarcar</span>
+      </div>
+    </section>
+    <!-- 
+    <section class="brunch">
+      <h3>Bebidas</h3>
+      <div class="list-cardapio">
+        <ul>
+          <li>
+            <div class="details-cardapio">
+              <h4 class="meal">Coca-Cola lata</h4>
+              <img class="meal-img" src="" alt="coca-cola lata" />
+              <p class="description">
+                Arroz branco, macarrão, feijão carioca, farofa e salada verde.
+              </p>
+            </div>
 
-              <strong class="price">R$ 5,00</strong>
-            </li>
+            <strong class="price">R$ 5,00</strong>
+          </li>
 
-            <li>
-              <div class="details-cardapio">
-                <h4 class="meal">Água 500ml</h4>
-                <img class="meal-img" src="" alt="Água 500ml" />
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </p>
-              </div>
+          <li>
+            <div class="details-cardapio">
+              <h4 class="meal">Água 500ml</h4>
+              <img class="meal-img" src="" alt="Água 500ml" />
+              <p class="description">
+                Arroz branco, macarrão, feijão carioca, farofa e salada verde.
+              </p>
+            </div>
 
-              <strong class="price">R$ 4,00</strong>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <a
-      id="pedido"
-      title="Faça agora o seu pedido!"
-      href="https://wa.me/5585989647993?text=Olá, bom dia, poderia me ajudar com meu pedido?"
-      style="
+            <strong class="price">R$ 4,00</strong>
+          </li>
+        </ul>
+      </div>
+    </section>
+     -->
+
+  </main>
+  <a id="pedido" title="Faça agora o seu pedido!"
+    href="https://wa.me/5585989647993?text=Olá, bom dia, poderia me ajudar com meu pedido?" style="
         position: fixed;
         width: 60px;
         height: 60px;
@@ -134,12 +132,14 @@
         border-radius: 50px;
         text-align: center;
         font-size: 30px;
-        box-shadow: 1px 1px 2px #888;
+        box-shadow: 2px 2px 4px #888;
         z-index: 1000;
-      "
-      target="_blank"
-    >
-      <i style="margin-top: 16px" class="fa fa-whatsapp"></i>
-    </a>
-  </body>
+      ">
+    <i style="margin-top: 16px" class="fa fa-whatsapp"></i>
+  </a>
+
+  <script src="./assets/scripts/index.js"></script>
+
+</body>
+
 </html>

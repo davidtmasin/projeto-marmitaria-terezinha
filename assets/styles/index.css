@@ -1,58 +1,53 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #FFEDD5;
   font-family: 'Roboto', sans-serif;
 }
 
-header{
+header {
   padding: 32px 0 16px 0;
   text-align: center;
+
 }
 
-header, .brunch{
+header,
+.brunch {
   max-width: 310px;
   margin: 0 auto;
 }
 
-/* header h1{
-  font-family: 'Sacramento', cursive;
-  font-size: 2.4rem;
-  margin-bottom: 1px;
-  color: #995000;
-} */
-
-header h1 img{
-max-width: 310px;
+header h1 img {
+  max-width: 310px;
 }
 
 
-header h2{
+header h2 {
   font-size: 1.1rem;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-header p{
+header p {
   font-size: .9rem;
   font-weight: 400;
 }
 
-header p span{
+header p span {
   font-weight: 600;
   color: rgb(255, 0, 0);
 }
 
-.brunch{
+.brunch {
   margin-bottom: 24px;
-  
+
 }
 
-.brunch h3{
+.brunch h3 {
   background-color: #FED7AA;
   padding: 8px 16px;
   text-align: center;
@@ -62,20 +57,26 @@ header p span{
   border: 2px solid #ce9657;
 }
 
-.list-cardapio ul{
+.list-cardapio ul {
   list-style: none;
 }
 
-ul li{
-  margin-bottom: 16px;
+ul li {
+  margin-bottom: 26px;
   display: flex;
+  /* transition: ease .5s; */
 }
 
-li .details-cardapio{
+/* ul li:hover {
+  transition: ease .5s;
+  padding: 5px 2px;
+} */
+
+li .details-cardapio {
   max-width: 240px;
 }
 
-.details-cardapio h4{
+.details-cardapio h4 {
   text-transform: uppercase;
   margin-bottom: 8px;
   font-size: 16px;
@@ -83,27 +84,52 @@ li .details-cardapio{
 
 }
 
-.details-cardapio .meal-img{
-  width: 200px;
-  height: 250px;
+.price-cardapio {
+  display: flex;
+  flex-direction: column;
 }
 
-.details-cardapio strong{
+.details-cardapio strong {
   text-transform: uppercase;
 }
 
-.details-cardapio p{
-  color: rgba(0, 0, 0, 0.6);
+input[type=checkbox] {
+  margin-top: 14px;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+
+.details-cardapio p {
+  color: rgba(0, 0, 0, 0.7);
   font-size: 14px;
-  line-height: 21px;
+  line-height: 25px;
 }
 
-#pedido{
-transition: ease .7s;
+.btnLimpar{
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ce9657;
+  max-width: 100px;
+  text-align: center;
+  background-color: #FED7AA;
+  cursor: pointer;
 }
 
-#pedido:hover{
+#limpar{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+#pedido {
+  border: 1px solid #fff;
   transition: ease .7s;
-  opacity: 0.5;
 }
 
+#pedido:hover {
+  transition: ease .7s;
+  opacity: 0.65;
+}
