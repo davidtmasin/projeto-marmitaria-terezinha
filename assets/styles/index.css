@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body{
+  background-color: #FFEDD5;
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  padding: 32px 0 16px 0;
+  text-align: center;
+}
+
+header, .brunch{
+  max-width: 310px;
+  margin: 0 auto;
+}
+
+/* header h1{
+  font-family: 'Sacramento', cursive;
+  font-size: 2.4rem;
+  margin-bottom: 1px;
+  color: #995000;
+} */
+
+header h1 img{
+max-width: 310px;
+}
+
+
+header h2{
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+header p{
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+header p span{
+  font-weight: 600;
+  color: rgb(255, 0, 0);
+}
+
+.brunch{
+  margin-bottom: 24px;
+  
+}
+
+.brunch h3{
+  background-color: #FED7AA;
+  padding: 8px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  font-size: 18px;
+  border: 2px solid #ce9657;
+}
+
+.list-cardapio ul{
+  list-style: none;
+}
+
+ul li{
+  margin-bottom: 16px;
+  display: flex;
+}
+
+li .details-cardapio{
+  max-width: 240px;
+}
+
+.details-cardapio h4{
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 19px;
+
+}
+
+.details-cardapio .meal-img{
+  width: 200px;
+  height: 250px;
+}
+
+.details-cardapio strong{
+  text-transform: uppercase;
+}
+
+.details-cardapio p{
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+#pedido{
+transition: ease .7s;
+}
+
+#pedido:hover{
+  transition: ease .7s;
+  opacity: 0.5;
+}
+
