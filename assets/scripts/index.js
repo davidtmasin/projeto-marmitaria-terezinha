@@ -7,12 +7,12 @@ let prices = document.querySelectorAll('.price')
 let pedidoCompleto =
   'Olá, bom dia, poderia me ajudar com meu pedido?\n\nEu gostaria de:\n'
 let buttonLimpar = document.getElementById('limpar')
-let msgWhatsapp = ''
 
 pedidoWpp.addEventListener('click', function (e) {
   let marmita = ''
   let descricao = ''
   let preco = ''
+  let msgWhatsapp = ''
 
   checkboxes.forEach(function (el) {
     if (el.checked) {
@@ -98,7 +98,7 @@ pedidoWpp.addEventListener('click', function (e) {
 })
 
 buttonLimpar.addEventListener('click', function (e) {
-  let msgWhatsapp = ''
+  let pedidoCompleto = 'Olá, bom dia, poderia me ajudar com meu pedido?\n\n'
   pedidoWpp.href =
     'https://wa.me/5585989647993?text=Olá, bom dia, poderia me ajudar com meu pedido?'
   checkboxes.forEach(function (el) {
