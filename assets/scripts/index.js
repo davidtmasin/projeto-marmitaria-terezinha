@@ -8,6 +8,8 @@ let pedidoCompleto =
 let buttonLimpar = document.getElementById('limpar')
 
 pedidoWpp.addEventListener('click', function (e) {
+  pedidoCompleto =
+    'Olá, bom dia, poderia me ajudar com meu pedido?\n\nEu gostaria de:\n'
   let marmita = ''
   // let descricao = ''
   let preco = ''
