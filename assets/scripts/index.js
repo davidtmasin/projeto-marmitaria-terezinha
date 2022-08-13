@@ -6,6 +6,8 @@ let prices = document.querySelectorAll('.price')
 let pedidoCompleto =
   'Olá, bom dia, poderia me ajudar com meu pedido?\n\nEu gostaria de:\n'
 let buttonLimpar = document.getElementById('limpar')
+const numberWhatsapp = '558592346554'
+const hrefWhatsapp = `https://wa.me/${numberWhatsapp}?text=Olá, bom dia, poderia me ajudar com meu pedido?`
 
 const btnMinus1 = document.getElementById('minus01')
 const btnMinus2 = document.getElementById('minus02')
@@ -36,19 +38,19 @@ pedidoWpp.addEventListener('click', function (e) {
       console.log('Não marcado: ' + el.id)
       if (el.id == 'marmita01') {
         console.log('Marmita 01')
-        pedidoWpp.href = `https://wa.me/5585989647993?text=Olá, bom dia, poderia me ajudar com meu pedido?`
+        pedidoWpp.href = `${hrefWhatsapp}`
       }
       if (el.id == 'marmita02') {
         console.log('Marmita 02')
-        pedidoWpp.href = `https://wa.me/5585989647993?text=Olá, bom dia, poderia me ajudar com meu pedido?`
+        pedidoWpp.href = `${hrefWhatsapp}`
       }
       if (el.id == 'marmita03') {
         console.log('Marmita 03')
-        pedidoWpp.href = `https://wa.me/5585989647993?text=Olá, bom dia, poderia me ajudar com meu pedido?`
+        pedidoWpp.href = `${hrefWhatsapp}`
       }
       if (el.id == 'marmita04') {
         console.log('Marmita 04')
-        pedidoWpp.href = `https://wa.me/5585989647993?text=Olá, bom dia, poderia me ajudar com meu pedido?`
+        pedidoWpp.href = `${hrefWhatsapp}`
       }
     }
   })
@@ -58,7 +60,6 @@ pedidoWpp.addEventListener('click', function (e) {
         console.log('Marmita 01')
 
         marmita = meals[0].textContent
-        // descricao = descriptions[0].textContent
         preco = prices[0].textContent
         total = qtde1.textContent
         console.log(total)
@@ -76,7 +77,7 @@ pedidoWpp.addEventListener('click', function (e) {
 
         msgWhatsapp = pedidoCompleto
         msgWhatsapp = window.encodeURIComponent(msgWhatsapp)
-        pedidoWpp.href = `https://wa.me/5585989647993?text=${msgWhatsapp}`
+        pedidoWpp.href = `https://wa.me/${numberWhatsapp}?text=${msgWhatsapp}`
       }
 
       if (ele.id == 'marmita02') {
@@ -100,19 +101,13 @@ pedidoWpp.addEventListener('click', function (e) {
 
         msgWhatsapp = pedidoCompleto
         msgWhatsapp = window.encodeURIComponent(msgWhatsapp)
-        pedidoWpp.href = `https://wa.me/5585989647993?text=${msgWhatsapp}`
+        pedidoWpp.href = `https://wa.me/${numberWhatsapp}?text=${msgWhatsapp}`
       }
 
       if (ele.id == 'marmita03') {
         console.log('Marmita 03')
-        // meals.forEach(function (ele) {
-        //   console.log(ele.textContent);
-        // })
-        // console.log(meals[2].textContent);
         marmita = meals[2].textContent
-        // console.log(descriptions[2].textContent);
         descricao = descriptions[2].textContent
-        // console.log(prices[2].textContent);
         preco = prices[2].textContent
         total = qtde3.textContent
         console.log(total)
@@ -130,7 +125,7 @@ pedidoWpp.addEventListener('click', function (e) {
 
         msgWhatsapp = pedidoCompleto
         msgWhatsapp = window.encodeURIComponent(msgWhatsapp)
-        pedidoWpp.href = `https://wa.me/5585989647993?text=${msgWhatsapp}`
+        pedidoWpp.href = `https://wa.me/${numberWhatsapp}?text=${msgWhatsapp}`
       }
 
       if (ele.id == 'marmita04') {
@@ -160,7 +155,7 @@ pedidoWpp.addEventListener('click', function (e) {
 
         msgWhatsapp = pedidoCompleto
         msgWhatsapp = window.encodeURIComponent(msgWhatsapp)
-        pedidoWpp.href = `https://wa.me/5585989647993?text=${msgWhatsapp}`
+        pedidoWpp.href = `https://wa.me/${numberWhatsapp}?text=${msgWhatsapp}`
       }
     }
   })
