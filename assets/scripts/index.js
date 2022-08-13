@@ -16,18 +16,10 @@ pedidoWpp.addEventListener('click', function (e) {
 
   checkboxes.forEach(function (el) {
     if (el.checked) {
-      selecionados++
-      // console.log(el.id);
       if (el.id == 'marmita01') {
         console.log('Marmita 01')
-        // meals.forEach(function (ele) {
-        //   console.log(ele.textContent);
-        // })
-        // console.log(meals[0].textContent);
         marmita = meals[0].textContent
-        // console.log(descriptions[0].textContent);
         descricao = descriptions[0].textContent
-        // console.log(prices[0].textContent);
         preco = prices[0].textContent
 
         pedidoCompleto += `*${marmita} - ${preco}*\n`
@@ -39,14 +31,8 @@ pedidoWpp.addEventListener('click', function (e) {
 
       if (el.id == 'marmita02') {
         console.log('Marmita 02')
-        // meals.forEach(function (ele) {
-        //   console.log(ele.textContent);
-        // })
-        // console.log(meals[1].textContent);
         marmita = meals[1].textContent
-        // console.log(descriptions[1].textContent);
         descricao = descriptions[1].textContent
-        // console.log(prices[1].textContent);
         preco = prices[1].textContent
 
         pedidoCompleto += `*${marmita} - ${preco}*\n`
@@ -98,7 +84,7 @@ pedidoWpp.addEventListener('click', function (e) {
 })
 
 buttonLimpar.addEventListener('click', function (e) {
-  let pedidoCompleto = 'Olá, bom dia, poderia me ajudar com meu pedido?\n\n'
+  pedidoCompleto = 'Olá, bom dia, poderia me ajudar com meu pedido?\n\n'
   pedidoWpp.href =
     'https://wa.me/5585989647993?text=Olá, bom dia, poderia me ajudar com meu pedido?'
   checkboxes.forEach(function (el) {
