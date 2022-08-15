@@ -18,7 +18,6 @@ const btnPlus2 = document.getElementById('plus02')
 const btnPlus3 = document.getElementById('plus03')
 const btnPlus4 = document.getElementById('plus04')
 
-let allPrices = document.querySelectorAll('.price')
 let allQtde = document.querySelectorAll('.quantity')
 let qtde1 = document.getElementById('quantity01')
 let qtde2 = document.getElementById('quantity02')
@@ -26,12 +25,13 @@ let qtde3 = document.getElementById('quantity03')
 let qtde4 = document.getElementById('quantity04')
 
 pedidoWpp.addEventListener('click', function (e) {
+  let prices = document.querySelectorAll('.price')
   pedidoCompleto =
     'Olá, bom dia, poderia me ajudar com meu pedido?\n\nEu gostaria de:\n'
   let marmita = ''
   // let descricao = ''
   let preco = ''
-  let total = ''
+  let subTotal = ''
   let msgWhatsapp = ''
 
   checkboxes.forEach(function (el) {
@@ -62,17 +62,17 @@ pedidoWpp.addEventListener('click', function (e) {
 
         marmita = meals[0].textContent
         preco = prices[0].textContent
-        total = qtde1.textContent
-        console.log(total)
+        subTotal = qtde1.textContent
+        console.log(subTotal)
 
-        if (parseInt(total) == 1) {
-          pedidoCompleto += `*0${total} marmita - ${marmita} - ${preco}*\n`
+        if (parseInt(subTotal) == 1) {
+          pedidoCompleto += `*0${subTotal} marmita - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
-        } else if (parseInt(total) > 1 && parseInt(total) < 10) {
-          pedidoCompleto += `*0${total} marmitas - ${marmita} - ${preco}*\n`
+        } else if (parseInt(subTotal) > 1 && parseInt(subTotal) < 10) {
+          pedidoCompleto += `*0${subTotal} marmitas - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         } else {
-          pedidoCompleto += `*${total} marmitas - ${marmita} - ${preco}*\n`
+          pedidoCompleto += `*${subTotal} marmitas - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         }
 
@@ -86,17 +86,17 @@ pedidoWpp.addEventListener('click', function (e) {
         marmita = meals[1].textContent
         descricao = descriptions[1].textContent
         preco = prices[1].textContent
-        total = qtde2.textContent
-        console.log(total)
+        subTotal = qtde2.textContent
+        console.log(subTotal)
 
-        if (parseInt(total) == 1) {
-          pedidoCompleto += `*0${total} marmita - ${marmita} - ${preco}*\n`
+        if (parseInt(subTotal) == 1) {
+          pedidoCompleto += `*0${subTotal} marmita - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
-        } else if (parseInt(total) > 1 && parseInt(total) < 10) {
-          pedidoCompleto += `*0${total} marmitas - ${marmita} - ${preco}*\n`
+        } else if (parseInt(subTotal) > 1 && parseInt(subTotal) < 10) {
+          pedidoCompleto += `*0${subTotal} marmitas - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         } else {
-          pedidoCompleto += `*${total} marmitas - ${marmita} - ${preco}*\n`
+          pedidoCompleto += `*${subTotal} marmitas - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         }
 
@@ -110,17 +110,17 @@ pedidoWpp.addEventListener('click', function (e) {
         marmita = meals[2].textContent
         descricao = descriptions[2].textContent
         preco = prices[2].textContent
-        total = qtde3.textContent
-        console.log(total)
+        subTotal = qtde3.textContent
+        console.log(subTotal)
 
-        if (parseInt(total) == 1) {
-          pedidoCompleto += `*0${total} marmita - ${marmita} - ${preco}*\n`
+        if (parseInt(subTotal) == 1) {
+          pedidoCompleto += `*0${subTotal} marmita - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
-        } else if (parseInt(total) > 1 && parseInt(total) < 10) {
-          pedidoCompleto += `*0${total} marmitas - ${marmita} - ${preco}*\n`
+        } else if (parseInt(subTotal) > 1 && parseInt(subTotal) < 10) {
+          pedidoCompleto += `*0${subTotal} marmitas - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         } else {
-          pedidoCompleto += `*${total} marmitas - ${marmita} - ${preco}*\n`
+          pedidoCompleto += `*${subTotal} marmitas - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         }
 
@@ -140,17 +140,17 @@ pedidoWpp.addEventListener('click', function (e) {
         descricao = descriptions[3].textContent
         // console.log(prices[3].textContent);
         preco = prices[3].textContent
-        total = qtde4.textContent
-        console.log(total)
+        subTotal = qtde4.textContent
+        console.log(subTotal)
 
-        if (parseInt(total) == 1) {
-          pedidoCompleto += `*0${total} marmita - ${marmita} - ${preco}*\n`
+        if (parseInt(subTotal) == 1) {
+          pedidoCompleto += `*0${subTotal} marmita - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
-        } else if (parseInt(total) > 1 && parseInt(total) < 10) {
-          pedidoCompleto += `*0${total} marmitas - ${marmita} - ${preco}*\n`
+        } else if (parseInt(subTotal) > 1 && parseInt(subTotal) < 10) {
+          pedidoCompleto += `*0${subTotal} marmitas - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         } else {
-          pedidoCompleto += `*${total} marmitas - ${marmita} - ${preco}*\n`
+          pedidoCompleto += `*${subTotal} marmitas - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         }
 
