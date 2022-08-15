@@ -18,6 +18,7 @@ const btnPlus2 = document.getElementById('plus02')
 const btnPlus3 = document.getElementById('plus03')
 const btnPlus4 = document.getElementById('plus04')
 
+let allPrices = document.querySelectorAll('.price')
 let allQtde = document.querySelectorAll('.quantity')
 let qtde1 = document.getElementById('quantity01')
 let qtde2 = document.getElementById('quantity02')
@@ -170,6 +171,9 @@ buttonLimpar.addEventListener('click', function (e) {
   })
   allQtde.forEach(function (el) {
     el.textContent = '1'
+  })
+  allPrices.forEach(function (el) {
+    el.textContent = 'R$ 12,00'
   })
 })
 
