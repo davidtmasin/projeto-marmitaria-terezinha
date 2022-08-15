@@ -69,10 +69,10 @@ pedidoWpp.addEventListener('click', function (e) {
           pedidoCompleto += `*0${total} marmita - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         } else if (parseInt(total) > 1 && parseInt(total) < 10) {
-          pedidoCompleto += `*0${total} marmitas - ${marmita} - ${preco} cada*\n`
+          pedidoCompleto += `*0${total} marmitas - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         } else {
-          pedidoCompleto += `*${total} marmitas - ${marmita} - ${preco} cada*\n`
+          pedidoCompleto += `*${total} marmitas - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         }
 
@@ -93,10 +93,10 @@ pedidoWpp.addEventListener('click', function (e) {
           pedidoCompleto += `*0${total} marmita - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         } else if (parseInt(total) > 1 && parseInt(total) < 10) {
-          pedidoCompleto += `*0${total} marmitas - ${marmita} - ${preco} cada*\n`
+          pedidoCompleto += `*0${total} marmitas - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         } else {
-          pedidoCompleto += `*${total} marmitas - ${marmita} - ${preco} cada*\n`
+          pedidoCompleto += `*${total} marmitas - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         }
 
@@ -117,10 +117,10 @@ pedidoWpp.addEventListener('click', function (e) {
           pedidoCompleto += `*0${total} marmita - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         } else if (parseInt(total) > 1 && parseInt(total) < 10) {
-          pedidoCompleto += `*0${total} marmitas - ${marmita} - ${preco} cada*\n`
+          pedidoCompleto += `*0${total} marmitas - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         } else {
-          pedidoCompleto += `*${total} marmitas - ${marmita} - ${preco} cada*\n`
+          pedidoCompleto += `*${total} marmitas - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         }
 
@@ -147,10 +147,10 @@ pedidoWpp.addEventListener('click', function (e) {
           pedidoCompleto += `*0${total} marmita - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         } else if (parseInt(total) > 1 && parseInt(total) < 10) {
-          pedidoCompleto += `*0${total} marmitas - ${marmita} - ${preco} cada*\n`
+          pedidoCompleto += `*0${total} marmitas - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         } else {
-          pedidoCompleto += `*${total} marmitas - ${marmita} - ${preco} cada*\n`
+          pedidoCompleto += `*${total} marmitas - ${marmita} - ${preco}*\n`
           console.log(pedidoCompleto)
         }
 
