@@ -29,10 +29,10 @@ switch (weekday) {
     break
   case 2:
     console.log('Hoje é terça-feira!')
-    meal01.textContent = 'Carne cozida'
-    meal02.textContent = 'Bisteca de gado marinado na cebola'
-    meal03.textContent = 'Bisteca de porco assada'
-    meal04.textContent = 'Bife ao molho'
+    meal01.textContent = 'Porco cozido'
+    meal02.textContent = 'Assado de panela'
+    meal03.textContent = 'Bisteca de gado assada'
+    meal04.textContent = 'Bisteca de porco assada'
     break
   case 3:
     console.log('Hoje é quarta-feira!')
