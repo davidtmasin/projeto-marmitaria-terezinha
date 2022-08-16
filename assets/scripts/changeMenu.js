@@ -9,6 +9,8 @@ meal04 = document.getElementById(allMeals[3])
 
 let allDescriptions = document.querySelectorAll('.description')
 
+let menu = document.getElementById('menuDay')
+
 switch (weekday) {
   case 0:
     console.log('Hoje é domingo!')
@@ -30,9 +32,16 @@ switch (weekday) {
   case 2:
     console.log('Hoje é terça-feira!')
     meal01.textContent = 'Porco cozido'
-    meal02.textContent = 'Assado de panela'
+    meal02.textContent = 'Fígado assado'
     meal03.textContent = 'Bisteca de gado assada'
     meal04.textContent = 'Bisteca de porco assada'
+    // if(hasImage('./assets/img/menu/menuTer.png') == true){
+    //   console.log("hasIsmage retornou TRUE");
+    // } else{
+    //   console.log("hasImage retornou FALSE");
+    // }
+    menu.href = './assets/img/menu/menuTer.png'
+    menu.download = 'Terça-feira | Marmitaria Terezinha'
     break
   case 3:
     console.log('Hoje é quarta-feira!')
@@ -40,7 +49,6 @@ switch (weekday) {
     meal02.textContent = 'Bife ao molho'
     meal03.textContent = 'Bisteca de porco assada'
     meal04.textContent = 'Carne moída cozida'
-    break
     break
   case 4:
     console.log('Hoje é quinta-feira!')
@@ -69,4 +77,28 @@ switch (weekday) {
       `A informação da variável weekday é ${weekday}, sendo uma informação inválida, devendo variar de 0 a 6, sendo 0 - domingo, 1 - segunda, ..., 6 - sábado.`
     )
     break
+}
+
+
+function hasImage(imageFile) {
+  let status
+	var ajax = new XMLHttpRequest()
+
+	ajax.open("GET",imageFile,true)
+	ajax.send();
+
+	ajax.onreadystatechange = function() {
+		if (ajax.readyState == 4){
+			var png = ajax.responseText
+
+			if(ajax.status===200) {
+				console.log("A imagem " + imageFile + " existe dentro do projeto.")
+        status = true
+			} else {
+				console.log("A imagem " + imageFile + " NÃO existe dentro do projeto.")
+        status = false
+			}
+		}
+	}
+  return status
 }

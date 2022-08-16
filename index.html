@@ -22,7 +22,7 @@
   <meta name="application-name" content="Pedidos - Marmitaria Terezinha">
 
   <title>Marmitaria Terezinha</title>
-  
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
@@ -141,10 +141,22 @@
       " target="_blank" onclick="audioWPP()">
     <i style="margin-top: 10px" class="fa fa-whatsapp"></i>
   </a>
+  <!-- Os dois asides abaixo são para implementar o menu lateral -->
+  <aside id="opened" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="https://www.instagram.com/marmitaria_terezinha6" target="_blank">Instagram</a>
+    <a id="menuDay" href="#" target="_blank">Cardápio do dia</a>
+    <a href="https://www.github.com/davidtmasin" target="_blank">Autor do projeto</a>
+</aside>    
+<aside id="collapsed">
+    <button class="openbtn" onclick="openNav()">☰</button>
+    <!-- <p><strong>ASIDE</strong>: É uma seção que engloba conteúdos relacionados ao conteúdo principal, como artigos relacionados, biografia do autor e publicidade. Normalmente são representadas como barras laterais.</p> -->
+</aside>
 
   <script src="./assets/scripts/index.js"></script>
   <script src="./assets/scripts/changeMenu.js"></script>
   <script src="./assets/scripts/updateValue.js"></script>
+  <script src="./assets/scripts/sideBar.js"></script>
   <script>
     function audioWPP() {
       const wppAudio = new Audio()
