@@ -1,165 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:site_name" content="Marmitaria Terezinha" />
-    <meta
-      property="og:url"
-      content="https://marmitaria-terezinha.vercel.app/"
-    />
-    <meta
-      property="og:image"
-      content="https://marmitaria-terezinha.vercel.app/assets/img/imageShareLink.png"
-    />
-    <meta property="og:locale" content="pt_BR" />
-    <meta
-      name="description"
-      content="Marmitaria Terezinha - A melhor comida caseira da região! - Funcionamento de domingo a domingo."
-    />
 
-    <title>Marmitaria Terezinha</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sacramento&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/styles/index.css" />
-    <link
-      rel="shortcut icon"
-      href="./assets/img/favicon.ico"
-      type="image/x-icon"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:site_name" content="Marmitaria Terezinha" />
+  <meta property="og:title" content="Marmitaria Terezinha" />
+  <meta property="og:url" content="https://marmitaria-terezinha.vercel.app" />
+  <meta property="og:image" content="https://marmitaria-terezinha.vercel.app/assets/img/imageShareLink.png" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:description" content="A melhor comida caseira da região você encontra na Marmitaria Terezinha | Funcionamos de domingo a domingo" />
+  <meta name="description"
+    content="A melhor comida caseira da região você encontra na Marmitaria Terezinha | Funcionamos de domingo a domingo" />
+  <meta name="robots" content="follow">
+  <meta name="robots" content="index">
+  <meta name="robots" content="snippet">
+  <meta http-equiv="refresh" content="300">
+  <meta http-equiv="content-language" content="pt-br"> 
+  <meta name="author" content="David Teixeira">
+  <meta name="creator" content="David Teixeira">
+  <meta name="application-name" content="Pedidos - Marmitaria Terezinha">
 
-  <body>
-    <header>
-      <h1>
-        <a href="https://www.instagram.com/marmitaria_terezinha6/"
-          ><img src="./assets/img/logo.png" alt="Marmitaria Terezinha - Logo"
-        /></a>
-      </h1>
-      <h2>A <span>melhor</span> comida caseira da região!</h2>
-      <p>Funcionamos de <span>domingo a domingo</span>.</p>
-    </header>
+  <title>Marmitaria Terezinha</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/styles/index.css" />
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+</head>
 
-    <main>
-      <section class="brunch">
-        <h3>Cardápio do dia</h3>
-        <div class="list-cardapio">
-          <ul>
-            <li class="item-cardapio">
-              <div class="details-cardapio">
-                <h4 class="meal" id="meal01">Linguiça Assada</h4>
-                <p class="description" id="description-01">
-                  Arroz branco, macarrão, feijão carioca, farofa e salada verde.
-                </p>
-              </div>
-              <div class="price-cardapio">
-                <strong class="price" id="price01">R$ 12,00</strong>
-                <input
-                  type="checkbox"
-                  name="itemCardapio"
-                  id="marmita01"
-                  title="Escolher esta marmita"
-                />
-                <p id="qtde">
-                  <span class="decrease"
-                    ><i id="minus01" name="minus" class="fa fa-minus-circle"></i
-                  ></span>
-                  <span class="quantity" id="quantity01">1</span>
-                  <span class="increase"
-                    ><i id="plus01" class="fa fa-plus-circle"></i
-                  ></span>
-                </p>
-              </div>
-            </li>
+<body>
+  <header>
+    <h1>
+      <a href="https://www.instagram.com/marmitaria_terezinha6/"><img src="./assets/img/logo.png"
+          alt="Marmitaria Terezinha - Logo" /></a>
+    </h1>
+    <h2>A <span>melhor</span> comida caseira da região!</h2>
+    <p>Funcionamos de <span>domingo a domingo</span>.</p>
+  </header>
 
-            <li class="item-cardapio">
-              <div class="details-cardapio">
-                <h4 class="meal" id="meal02">Carne moída</h4>
-                <p class="description">
-                  Arroz branco, macarrão, feijão carioca, farofa e salada verde.
-                </p>
-              </div>
-              <div class="price-cardapio">
-                <strong class="price" id="price02">R$ 12,00</strong>
-                <input type="checkbox" name="itemCardapio" id="marmita02" />
-                <p id="qtde">
-                  <span class="decrease"
-                    ><i id="minus02" name="minus" class="fa fa-minus-circle"></i
-                  ></span>
-                  <span class="quantity" id="quantity02">1</span>
-                  <span class="increase"
-                    ><i id="plus02" class="fa fa-plus-circle"></i
-                  ></span>
-                </p>
-              </div>
-            </li>
+  <main>
+    <section class="brunch">
+      <h3>Cardápio do dia</h3>
+      <div class="list-cardapio">
+        <ul>
+          <li class="item-cardapio">
+            <div class="details-cardapio">
+              <h4 class="meal" id="meal01">Linguiça Assada</h4>
+              <p class="description" id="description-01">
+                Arroz branco, macarrão, feijão carioca, farofa e salada verde.
+              </p>
+            </div>
+            <div class="price-cardapio">
+              <strong class="price" id="price01">R$ 12,00</strong>
+              <input type="checkbox" name="itemCardapio" id="marmita01" title="Escolher esta marmita" />
+              <p id="qtde">
+                <span class="decrease"><i id="minus01" name="minus" class="fa fa-minus-circle"></i></span>
+                <span class="quantity" id="quantity01">1</span>
+                <span class="increase"><i id="plus01" class="fa fa-plus-circle"></i></span>
+              </p>
+            </div>
+          </li>
 
-            <li class="item-cardapio">
-              <div class="details-cardapio">
-                <h4 class="meal" id="meal03">Fígado assado</h4>
-                <p class="description">
-                  Arroz branco, macarrão, feijão carioca, farofa e salada verde.
-                </p>
-              </div>
-              <div class="price-cardapio">
-                <strong class="price" id="price03">R$ 12,00</strong>
-                <input type="checkbox" name="itemCardapio" id="marmita03" />
-                <p id="qtde">
-                  <span class="decrease"
-                    ><i id="minus03" name="minus" class="fa fa-minus-circle"></i
-                  ></span>
-                  <span class="quantity" id="quantity03">1</span>
-                  <span class="increase"
-                    ><i id="plus03" class="fa fa-plus-circle"></i
-                  ></span>
-                </p>
-              </div>
-            </li>
+          <li class="item-cardapio">
+            <div class="details-cardapio">
+              <h4 class="meal" id="meal02">Carne moída</h4>
+              <p class="description">
+                Arroz branco, macarrão, feijão carioca, farofa e salada verde.
+              </p>
+            </div>
+            <div class="price-cardapio">
+              <strong class="price" id="price02">R$ 12,00</strong>
+              <input type="checkbox" name="itemCardapio" id="marmita02" />
+              <p id="qtde">
+                <span class="decrease"><i id="minus02" name="minus" class="fa fa-minus-circle"></i></span>
+                <span class="quantity" id="quantity02">1</span>
+                <span class="increase"><i id="plus02" class="fa fa-plus-circle"></i></span>
+              </p>
+            </div>
+          </li>
 
-            <li class="item-cardapio">
-              <div class="details-cardapio">
-                <h4 class="meal" id="meal04">Peixe assado</h4>
-                <p class="description">
-                  Arroz branco, macarrão, feijão carioca, farofa e salada verde.
-                </p>
-              </div>
-              <div class="price-cardapio">
-                <strong class="price" id="price04">R$ 12,00</strong>
-                <input type="checkbox" name="itemCardapio" id="marmita04" />
-                <p id="qtde">
-                  <span class="decrease"
-                    ><i id="minus04" name="minus" class="fa fa-minus-circle"></i
-                  ></span>
-                  <span class="quantity" id="quantity04">1</span>
-                  <span class="increase"
-                    ><i id="plus04" class="fa fa-plus-circle"></i
-                  ></span>
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="btnLimpar">
-          <span id="limpar">Limpar</span>
-        </div>
-      </section>
-    </main>
-    <a
-      id="pedido"
-      title="Faça agora o seu pedido!"
-      style="
+          <li class="item-cardapio">
+            <div class="details-cardapio">
+              <h4 class="meal" id="meal03">Fígado assado</h4>
+              <p class="description">
+                Arroz branco, macarrão, feijão carioca, farofa e salada verde.
+              </p>
+            </div>
+            <div class="price-cardapio">
+              <strong class="price" id="price03">R$ 12,00</strong>
+              <input type="checkbox" name="itemCardapio" id="marmita03" />
+              <p id="qtde">
+                <span class="decrease"><i id="minus03" name="minus" class="fa fa-minus-circle"></i></span>
+                <span class="quantity" id="quantity03">1</span>
+                <span class="increase"><i id="plus03" class="fa fa-plus-circle"></i></span>
+              </p>
+            </div>
+          </li>
+
+          <li class="item-cardapio">
+            <div class="details-cardapio">
+              <h4 class="meal" id="meal04">Peixe assado</h4>
+              <p class="description">
+                Arroz branco, macarrão, feijão carioca, farofa e salada verde.
+              </p>
+            </div>
+            <div class="price-cardapio">
+              <strong class="price" id="price04">R$ 12,00</strong>
+              <input type="checkbox" name="itemCardapio" id="marmita04" />
+              <p id="qtde">
+                <span class="decrease"><i id="minus04" name="minus" class="fa fa-minus-circle"></i></span>
+                <span class="quantity" id="quantity04">1</span>
+                <span class="increase"><i id="plus04" class="fa fa-plus-circle"></i></span>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="btnLimpar">
+        <span id="limpar">Limpar</span>
+      </div>
+    </section>
+  </main>
+  <a id="pedido" title="Faça agora o seu pedido!" style="
         position: fixed;
         width: 50px;
         height: 50px;
@@ -172,22 +138,20 @@
         font-size: 30px;
         box-shadow: 2px 2px 4px #888;
         z-index: 1000;
-      "
-      target="_blank"
-      onclick="audioWPP()"
-    >
-      <i style="margin-top: 10px" class="fa fa-whatsapp"></i>
-    </a>
+      " target="_blank" onclick="audioWPP()">
+    <i style="margin-top: 10px" class="fa fa-whatsapp"></i>
+  </a>
 
-    <script src="./assets/scripts/index.js"></script>
-    <script src="./assets/scripts/changeMenu.js"></script>
-    <script src="./assets/scripts/updateValue.js"></script>
-    <script>
-      function audioWPP() {
-        const wppAudio = new Audio()
-        wppAudio.src = './assets/audios/web_whatsapp.wav'
-        wppAudio.play()
-      }
-    </script>
-  </body>
+  <script src="./assets/scripts/index.js"></script>
+  <script src="./assets/scripts/changeMenu.js"></script>
+  <script src="./assets/scripts/updateValue.js"></script>
+  <script>
+    function audioWPP() {
+      const wppAudio = new Audio()
+      wppAudio.src = './assets/audios/web_whatsapp.wav'
+      wppAudio.play()
+    }
+  </script>
+</body>
+
 </html>
