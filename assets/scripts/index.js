@@ -18,7 +18,7 @@ const btnPlus2 = document.getElementById('plus02')
 const btnPlus3 = document.getElementById('plus03')
 const btnPlus4 = document.getElementById('plus04')
 
-let allPrices = documen.getElementById('price')
+let allPrices = document.getElementById('price')
 let allQtde = document.querySelectorAll('.quantity')
 let qtde1 = document.getElementById('quantity01')
 let qtde2 = document.getElementById('quantity02')
