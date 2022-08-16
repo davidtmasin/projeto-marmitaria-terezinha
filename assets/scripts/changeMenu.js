@@ -21,6 +21,7 @@ switch (weekday) {
     allDescriptions.forEach(function (e) {
       e.textContent = 'Baião de dois, farofa e salada verde.'
     })
+    hasImage('./assets/img/menu/menuDom.png')
     break
   case 1:
     console.log('Hoje é segunda-feira!')
@@ -28,6 +29,7 @@ switch (weekday) {
     meal02.textContent = 'Carne de porco ao molho'
     meal03.textContent = 'Carne de gado cozida'
     meal04.textContent = 'Fígado assado'
+    hasImage('./assets/img/menu/menuSeg.png')
     break
   case 2:
     console.log('Hoje é terça-feira!')
@@ -35,13 +37,7 @@ switch (weekday) {
     meal02.textContent = 'Fígado assado'
     meal03.textContent = 'Bisteca de gado assada'
     meal04.textContent = 'Bisteca de porco assada'
-    // if(hasImage('./assets/img/menu/menuTer.png') == true){
-    //   console.log("hasIsmage retornou TRUE");
-    // } else{
-    //   console.log("hasImage retornou FALSE");
-    // }
-    menu.href = './assets/img/menu/menuTer.png'
-    menu.download = 'Terça-feira | Marmitaria Terezinha'
+    hasImage('./assets/img/menu/menuTer.png')
     break
   case 3:
     console.log('Hoje é quarta-feira!')
@@ -49,6 +45,7 @@ switch (weekday) {
     meal02.textContent = 'Bife ao molho'
     meal03.textContent = 'Bisteca de porco assada'
     meal04.textContent = 'Carne moída cozida'
+    hasImage('./assets/img/menu/menuQuar.png')
     break
   case 4:
     console.log('Hoje é quinta-feira!')
@@ -56,6 +53,7 @@ switch (weekday) {
     meal02.textContent = 'Linguiça assada'
     meal03.textContent = 'Bisteca de gado assada'
     meal04.textContent = 'Bife ao molho'
+    hasImage('./assets/img/menu/menuQuin.png')
     break
   case 5:
     console.log('Hoje é sexta-feira!')
@@ -63,6 +61,7 @@ switch (weekday) {
     meal02.textContent = 'Carne moída'
     meal03.textContent = 'Fígado assado'
     meal04.textContent = 'Peixe assado'
+    hasImage('./assets/img/menu/menuSex.png')
     break
   case 6:
     console.log('Hoje é sábado')
@@ -70,6 +69,7 @@ switch (weekday) {
     meal02.textContent = 'Fígado assado'
     meal03.textContent = 'Peixe assado'
     meal04.textContent = 'Linguiça assada'
+    hasImage('./assets/img/menu/menuSab.png')
     break
 
   default:
@@ -81,7 +81,6 @@ switch (weekday) {
 
 
 function hasImage(imageFile) {
-  let status
 	var ajax = new XMLHttpRequest()
 
 	ajax.open("GET",imageFile,true)
@@ -93,12 +92,12 @@ function hasImage(imageFile) {
 
 			if(ajax.status===200) {
 				console.log("A imagem " + imageFile + " existe dentro do projeto.")
-        status = true
+        menu.href = './assets/img/menu/menuTer.png'
+        menu.download = 'Terça-feira | Marmitaria Terezinha'
 			} else {
 				console.log("A imagem " + imageFile + " NÃO existe dentro do projeto.")
-        status = false
+        menu.href = './assets/pages/404notfound.html'
 			}
 		}
 	}
-  return status
 }
