@@ -41,10 +41,10 @@ switch (weekday) {
     break
   case 3:
     console.log('Hoje é quarta-feira!')
-    meal01.textContent = 'Frango ao molho'
-    meal02.textContent = 'Bife ao molho'
+    meal01.textContent = 'Assado de panela'
+    meal02.textContent = 'Frango ao molho'
     meal03.textContent = 'Bisteca de porco assada'
-    meal04.textContent = 'Carne moída cozida'
+    meal04.textContent = 'Linguiça assada'
     hasImage('./assets/img/menu/menuQuar.png')
     break
   case 4:
@@ -79,25 +79,24 @@ switch (weekday) {
     break
 }
 
-
 function hasImage(imageFile) {
-	var ajax = new XMLHttpRequest()
+  var ajax = new XMLHttpRequest()
 
-	ajax.open("GET",imageFile,true)
-	ajax.send();
+  ajax.open('GET', imageFile, true)
+  ajax.send()
 
-	ajax.onreadystatechange = function() {
-		if (ajax.readyState == 4){
-			var png = ajax.responseText
+  ajax.onreadystatechange = function () {
+    if (ajax.readyState == 4) {
+      var png = ajax.responseText
 
-			if(ajax.status===200) {
-				console.log("A imagem " + imageFile + " existe dentro do projeto.")
+      if (ajax.status === 200) {
+        console.log('A imagem ' + imageFile + ' existe dentro do projeto.')
         menu.href = './assets/img/menu/menuTer.png'
         menu.download = 'Terça-feira | Marmitaria Terezinha'
-			} else {
-				console.log("A imagem " + imageFile + " NÃO existe dentro do projeto.")
+      } else {
+        console.log('A imagem ' + imageFile + ' NÃO existe dentro do projeto.')
         menu.href = './assets/pages/404notfound.html'
-			}
-		}
-	}
+      }
+    }
+  }
 }
