@@ -50,8 +50,8 @@ switch (weekday) {
   case 4:
     console.log('Hoje é quinta-feira!')
     meal01.textContent = 'Fígado assado'
-    meal02.textContent = 'Linguiça assada'
-    meal03.textContent = 'Bisteca de gado assada'
+    meal02.textContent = 'Assado de panela'
+    meal03.textContent = 'Bisteca de porco assada'
     meal04.textContent = 'Bife ao molho'
     hasImage('./assets/img/menu/menuQuin.png')
     break
