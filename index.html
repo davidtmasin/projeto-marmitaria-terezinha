@@ -30,6 +30,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Sacramento&amp;display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/styles/index.css" />
+  <link rel="stylesheet" href="./assets/styles/popup.css" />
   <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
 </head>
 
@@ -145,19 +146,28 @@
   <!-- Os dois asides abaixo são para implementar o menu lateral -->
   <aside id="opened" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="https://www.instagram.com/marmitaria_terezinha6" target="_blank"><i class="fa fa-instagram" style="font-weight: 500;"></i> Instagram</a>
+    <a href="https://www.instagram.com/marmitaria_terezinha6" target="_blank"><i class="fa fa-instagram"
+        style="font-weight: 500;"></i> Instagram</a>
     <a id="menuDay" href="/"><i class="fa fa-file-image-o" style="font-weight: 500;"></i> Cardápio do dia</a>
-    <a href="https://www.github.com/davidtmasin" target="_blank"><i class="fa fa-user" style="font-weight: 500;"></i> Autor do projeto</a>
+    <a href="https://www.github.com/davidtmasin" target="_blank"><i class="fa fa-user" style="font-weight: 500;"></i>
+      Autor do projeto</a>
   </aside>
   <aside id="collapsed">
     <button class="openbtn" onclick="openNav()">☰</button>
     <!-- <p><strong>ASIDE</strong>: É uma seção que engloba conteúdos relacionados ao conteúdo principal, como artigos relacionados, biografia do autor e publicidade. Normalmente são representadas como barras laterais.</p> -->
   </aside>
+  <div id="popup" class="popup">
+    <img src="./assets/img/comunicados/comunicado01.png" id="popup-img" alt="popup">
+    <div id="container-close">
+      <button id="close">OK</button>
+    </div>
+  </div>
 
   <script src="./assets/scripts/index.js"></script>
   <script src="./assets/scripts/changeMenu.js"></script>
   <script src="./assets/scripts/updateValue.js"></script>
   <script src="./assets/scripts/sideBar.js"></script>
+  <script src="./assets/scripts/popup.js"></script>
   <script>
     function audioWPP() {
       const wppAudio = new Audio()
