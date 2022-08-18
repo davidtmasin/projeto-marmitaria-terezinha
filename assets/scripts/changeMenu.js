@@ -21,7 +21,7 @@ switch (weekday) {
     allDescriptions.forEach(function (e) {
       e.textContent = 'Baião de dois, farofa e salada verde.'
     })
-    hasImage('./assets/img/menu/menuDom.png')
+    hasImage('./assets/img/menu/menuDom.png', 'Domingo | Marmitaria Terezinha')
     break
   case 1:
     console.log('Hoje é segunda-feira!')
@@ -29,7 +29,7 @@ switch (weekday) {
     meal02.textContent = 'Carne de porco ao molho'
     meal03.textContent = 'Carne de gado cozida'
     meal04.textContent = 'Fígado assado'
-    hasImage('./assets/img/menu/menuSeg.png')
+    hasImage('./assets/img/menu/menuSeg.png', 'Segunda-feira | Marmitaria Terezinha')
     break
   case 2:
     console.log('Hoje é terça-feira!')
@@ -37,7 +37,7 @@ switch (weekday) {
     meal02.textContent = 'Fígado assado'
     meal03.textContent = 'Bisteca de gado assada'
     meal04.textContent = 'Bisteca de porco assada'
-    hasImage('./assets/img/menu/menuTer.png')
+    hasImage('./assets/img/menu/menuTer.png', 'Terça-feira | Marmitaria Terezinha')
     break
   case 3:
     console.log('Hoje é quarta-feira!')
@@ -45,7 +45,7 @@ switch (weekday) {
     meal02.textContent = 'Frango ao molho'
     meal03.textContent = 'Bisteca de porco assada'
     meal04.textContent = 'Linguiça assada'
-    hasImage('./assets/img/menu/menuQuar.png')
+    hasImage('./assets/img/menu/menuQuar.png', 'Quarta-feira | Marmitaria Terezinha')
     break
   case 4:
     console.log('Hoje é quinta-feira!')
@@ -53,7 +53,7 @@ switch (weekday) {
     meal02.textContent = 'Assado de panela'
     meal03.textContent = 'Bisteca de porco assada'
     meal04.textContent = 'Bife ao molho'
-    hasImage('./assets/img/menu/menuQuin.png')
+    hasImage('./assets/img/menu/menuQuin.png', 'Quinta-feira | Marmitaria Terezinha')
     break
   case 5:
     console.log('Hoje é sexta-feira!')
@@ -61,7 +61,7 @@ switch (weekday) {
     meal02.textContent = 'Carne moída'
     meal03.textContent = 'Fígado assado'
     meal04.textContent = 'Peixe assado'
-    hasImage('./assets/img/menu/menuSex.png')
+    hasImage('./assets/img/menu/menuSex.png', 'Sexta-feira | Marmitaria Terezinha')
     break
   case 6:
     console.log('Hoje é sábado')
@@ -69,7 +69,7 @@ switch (weekday) {
     meal02.textContent = 'Fígado assado'
     meal03.textContent = 'Peixe assado'
     meal04.textContent = 'Linguiça assada'
-    hasImage('./assets/img/menu/menuSab.png')
+    hasImage('./assets/img/menu/menuSab.png', 'Sábado | Marmitaria Terezinha')
     break
 
   default:
@@ -79,7 +79,7 @@ switch (weekday) {
     break
 }
 
-function hasImage(imageFile) {
+function hasImage(imageFile, fileName) {
   var ajax = new XMLHttpRequest()
 
   ajax.open('GET', imageFile, true)
@@ -91,8 +91,8 @@ function hasImage(imageFile) {
 
       if (ajax.status === 200) {
         console.log('A imagem ' + imageFile + ' existe dentro do projeto.')
-        menu.href = './assets/img/menu/menuTer.png'
-        menu.download = 'Terça-feira | Marmitaria Terezinha'
+        menu.href = `${imageFile}`
+        menu.download = `${fileName}`
       } else {
         console.log('A imagem ' + imageFile + ' NÃO existe dentro do projeto.')
         menu.href = './assets/pages/404notfound.html'
@@ -100,3 +100,4 @@ function hasImage(imageFile) {
     }
   }
 }
+
