@@ -4,7 +4,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #000;
+    background-color: #fed7aa;
     border: 2px solid #ffffff;
 }
 
@@ -21,8 +21,14 @@
     border-radius: 2px;
     padding: 5px;
     margin: 5px 0 8px 0;
-    border: 2px solid #ffffff;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 
+}
+
+#close:hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    filter: brightness(.6);
 }
 
 #popup-img {
