@@ -1,6 +1,8 @@
 var close = document.getElementById('close');
 var popup = document.getElementById('popup');
 
+// popup.addEventListener("load", )
+
 close.addEventListener("click", function () {
     // popup.style.display = 'none';
     setTimeout(() => {
@@ -16,8 +18,10 @@ close.addEventListener("click", function () {
     }, 500)
     setTimeout(() => {
         popup.style.opacity = '0';
+        popup.style.visibility = 'hidden';
     }, 500)
 })
+
 
 
 function loadPoup() {
