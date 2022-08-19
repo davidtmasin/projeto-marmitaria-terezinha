@@ -5,7 +5,7 @@ close.addEventListener("click", function () {
     // popup.style.display = 'none';
     setTimeout(() => {
         popup.style.opacity = '0.9';
-    }, 1000)
+    }, 500)
 
     setTimeout(() => {
         popup.style.opacity = '0.6';
