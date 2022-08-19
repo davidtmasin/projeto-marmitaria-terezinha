@@ -1,11 +1,12 @@
 #popup {
+    z-index: 1001;
     opacity: 0;
     visibility: hidden;
-    position: absolute;
+    position: fixed;
     /* margin: 0 auto; */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -50%);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .8s;
     background-color: #fed7aa;
     width: 350px;
@@ -13,7 +14,7 @@
 }
 
 #close {
-    z-index: 100;
+    z-index: 1001;
     /* background-color: #e00a1c; */
     color: #d31020;
     /* border: none; */
