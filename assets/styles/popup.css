@@ -1,22 +1,16 @@
 #popup {
     opacity: 0;
+    visibility: hidden;
     position: absolute;
     /* margin: 0 auto; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -20%);
-    background-color: #fed7aa;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .8s;
+    background-color: #fed7aa;
     width: 350px;
     height: 350px;
 }
-
-/* 
-#container-close {
-    max-width: 350px;
-    margin: 0 auto;
-    text-align: center;
-} */
 
 #close {
     z-index: 100;
@@ -29,14 +23,14 @@
     position: absolute;
     /* margin: 0 auto; */
     top: 0%;
-    left: 90%;    
+    left: 90%;
     font-size: 24px;
     /* border: 2px solid rgba(0, 0, 0, 0.7); */
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 
 }
 
-#close:hover{
+#close:hover {
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
     filter: brightness(2);
 }
@@ -45,4 +39,11 @@
     border: 2px solid #ffffff;
     width: 350px;
     height: 350px;
+}
+
+
+.m-fadeOut {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
 }

@@ -1,43 +1,33 @@
-var close = document.getElementById('close');
-var popup = document.getElementById('popup');
+let close = document.getElementById('close');
+let popup = document.getElementById('popup');
 
-// popup.addEventListener("load", )
-
-close.addEventListener("click", function () {
-    // popup.style.display = 'none';
-    setTimeout(() => {
-        popup.style.opacity = '0.9';
-    }, 500)
-
-    setTimeout(() => {
-        popup.style.opacity = '0.6';
-    }, 500)
-
-    setTimeout(() => {
-        popup.style.opacity = '0.9';
-    }, 500)
-    setTimeout(() => {
-        popup.style.opacity = '0';
-        popup.style.visibility = 'hidden';
-    }, 500)
-})
-
-
+window.addEventListener("load", loadPoup())
 
 function loadPoup() {
     setTimeout(() => {
+        popup.style.visibility = "visible"
         popup.style.opacity = '0.3';
-    }, 1000)
+    }, 250)
 
     setTimeout(() => {
         popup.style.opacity = '0.6';
-    }, 1000)
+    }, 250)
 
     setTimeout(() => {
         popup.style.opacity = '0.9';
-    }, 1000)
+    }, 250)
 
     setTimeout(() => {
         popup.style.opacity = '1';
-    }, 1000)
+    }, 250)
+    popup.style.opacity = '0'
+    popup.style.visibility = 'hidden'
 }
+
+close.addEventListener("click", function () {
+    popup.removeAttribute('style')
+    popup.removeAttribute('class')
+    popup.classList.toggle("m-fadeOut")
+})
+
+
