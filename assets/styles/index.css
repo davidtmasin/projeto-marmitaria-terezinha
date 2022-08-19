@@ -115,6 +115,10 @@ input[type='checkbox'] {
 }
 
 .qtde {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
   margin: 0 auto;
   margin-top: 14px;
   text-align: center;
@@ -127,6 +131,7 @@ input[type='checkbox'] {
 
 .quantity {
   font-size: 18px;
+  padding: 0 5px;
 }
 
 .increase i {
