@@ -32,9 +32,12 @@
   <link rel="stylesheet" href="./assets/styles/index.css" />
   <link rel="stylesheet" href="./assets/styles/popup.css" />
   <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+
+  <script src="https://kit.fontawesome.com/6edb685753.js" crossorigin="anonymous"></script>
+ 
 </head>
 
-<body>
+<body onload="loadPoup()">
   <header>
     <h1>
       <img src="./assets/img/logo.png" alt="Marmitaria Terezinha - Logo" />
@@ -156,11 +159,12 @@
     <button class="openbtn" onclick="openNav()">☰</button>
     <!-- <p><strong>ASIDE</strong>: É uma seção que engloba conteúdos relacionados ao conteúdo principal, como artigos relacionados, biografia do autor e publicidade. Normalmente são representadas como barras laterais.</p> -->
   </aside>
-  <div id="popup" class="popup">
+  <div id="popup" class="popup" hidden>
     <img src="./assets/img/comunicados/comunicado01.png" id="popup-img" alt="popup">
-    <div id="container-close">
-      <button id="close">OK</button>
-    </div>
+    <!-- <i class="fa fa-window-close"></i> -->
+    <i id="close" class="fa-solid fa-circle-xmark"></i>
+    <!-- <div id="container-close">
+    </div> -->
   </div>
 
   <script src="./assets/scripts/index.js"></script>

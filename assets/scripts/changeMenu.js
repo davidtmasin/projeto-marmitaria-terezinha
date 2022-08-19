@@ -57,10 +57,10 @@ switch (weekday) {
     break
   case 5:
     console.log('Hoje é sexta-feira!')
-    meal01.textContent = 'Frango ao molho'
-    meal02.textContent = 'Carne moída'
-    meal03.textContent = 'Fígado assado'
-    meal04.textContent = 'Peixe assado'
+    meal01.textContent = 'Frango cozido'
+    meal02.textContent = 'Bisteca de gado assada'
+    meal03.textContent = 'Bisteca de porco assada'
+    meal04.textContent = 'Fígado assado'
     hasImage('./assets/img/menu/menuSex.png', 'Sexta-feira | Marmitaria Terezinha')
     break
   case 6:
@@ -71,7 +71,6 @@ switch (weekday) {
     meal04.textContent = 'Linguiça assada'
     hasImage('./assets/img/menu/menuSab.png', 'Sábado | Marmitaria Terezinha')
     break
-
   default:
     console.log(
       `A informação da variável weekday é ${weekday}, sendo uma informação inválida, devendo variar de 0 a 6, sendo 0 - domingo, 1 - segunda, ..., 6 - sábado.`
