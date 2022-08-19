@@ -9,14 +9,14 @@ close.addEventListener("click", function () {
 
     setTimeout(() => {
         popup.style.opacity = '0.6';
-    }, 1000)
+    }, 500)
 
     setTimeout(() => {
         popup.style.opacity = '0.9';
-    }, 1000)
+    }, 500)
     setTimeout(() => {
         popup.style.opacity = '0';
-    }, 1000)
+    }, 500)
 })
 
 
