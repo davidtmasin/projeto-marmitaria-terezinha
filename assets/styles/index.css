@@ -114,14 +114,14 @@ input[type='checkbox'] {
   cursor: pointer;
 }
 
-#qtde {
+.qtde {
   margin: 0 auto;
   margin-top: 14px;
   text-align: center;
   font-size: 22px;
 }
 
-#qtde i {
+.qtde i {
   cursor: pointer;
 }
 
