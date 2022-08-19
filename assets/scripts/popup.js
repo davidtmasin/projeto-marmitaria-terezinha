@@ -6,8 +6,20 @@ close.addEventListener("click", function() {
 });
 
 
-// function loadPoup(){
-//     setTimeout(() => {
-//         popup.style.visibility = 'visible'
-//     }, 3000);
-// }
+function loadPoup(){
+    setTimeout(() => {
+        popup.style.opacity = '0.3';
+    }, 1000);
+
+    setTimeout(() => {
+        popup.style.opacity = '0.6';
+    }, 1000);
+
+    setTimeout(() => {
+        popup.style.opacity = '0.9';
+    }, 1000);
+
+    setTimeout(() => {
+        popup.style.opacity = '1';
+    }, 1000);
+}
