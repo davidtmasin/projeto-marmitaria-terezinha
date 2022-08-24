@@ -29,7 +29,10 @@ switch (weekday) {
     meal02.textContent = 'Bisteca de gado assada'
     meal03.textContent = 'Figado assado'
     meal04.textContent = 'Carne moída'
-    hasImage('./assets/img/menu/menuSeg.png', 'Segunda-feira | Marmitaria Terezinha')
+    hasImage(
+      './assets/img/menu/menuSeg.png',
+      'Segunda-feira | Marmitaria Terezinha'
+    )
     break
   case 2:
     console.log('Hoje é terça-feira!')
@@ -37,15 +40,21 @@ switch (weekday) {
     meal02.textContent = 'Assado de panela'
     meal03.textContent = 'Bisteca de porco assada'
     meal04.textContent = 'Fígado acebolado'
-    hasImage('./assets/img/menu/menuTer.png', 'Terça-feira | Marmitaria Terezinha')
+    hasImage(
+      './assets/img/menu/menuTer.png',
+      'Terça-feira | Marmitaria Terezinha'
+    )
     break
   case 3:
     console.log('Hoje é quarta-feira!')
-    meal01.textContent = 'Assado de panela'
-    meal02.textContent = 'Frango ao molho'
-    meal03.textContent = 'Bisteca de porco assada'
-    meal04.textContent = 'Linguiça assada'
-    hasImage('./assets/img/menu/menuQuar.png', 'Quarta-feira | Marmitaria Terezinha')
+    meal01.textContent = 'Frango ao molho'
+    meal02.textContent = 'Bife ao molho'
+    meal03.textContent = 'Bisteca de gado assada'
+    meal04.textContent = 'Bisteca de porco assada'
+    hasImage(
+      './assets/img/menu/menuQuar.png',
+      'Quarta-feira | Marmitaria Terezinha'
+    )
     break
   case 4:
     console.log('Hoje é quinta-feira!')
@@ -53,7 +62,10 @@ switch (weekday) {
     meal02.textContent = 'Assado de panela'
     meal03.textContent = 'Bisteca de porco assada'
     meal04.textContent = 'Bife ao molho'
-    hasImage('./assets/img/menu/menuQui.png', 'Quinta-feira | Marmitaria Terezinha')
+    hasImage(
+      './assets/img/menu/menuQui.png',
+      'Quinta-feira | Marmitaria Terezinha'
+    )
     break
   case 5:
     console.log('Hoje é sexta-feira!')
@@ -61,7 +73,10 @@ switch (weekday) {
     meal02.textContent = 'Bisteca de gado assada'
     meal03.textContent = 'Bisteca de porco assada'
     meal04.textContent = 'Fígado assado'
-    hasImage('./assets/img/menu/menuSex.png', 'Sexta-feira | Marmitaria Terezinha')
+    hasImage(
+      './assets/img/menu/menuSex.png',
+      'Sexta-feira | Marmitaria Terezinha'
+    )
     break
   case 6:
     console.log('Hoje é sábado')
@@ -99,4 +114,3 @@ function hasImage(imageFile, fileName) {
     }
   }
 }
-
