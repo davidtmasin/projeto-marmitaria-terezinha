@@ -18,9 +18,9 @@ switch (weekday) {
     meal02.textContent = 'Bisteca de porco assada'
     meal03.textContent = 'Linguiça assada'
     meal04.textContent = 'Fígado assado'
-    allDescriptions.forEach(function (e) {
-      e.textContent = 'Baião de dois, farofa e salada verde.'
-    })
+    // allDescriptions.forEach(function (e) {
+    //   e.textContent = 'Baião de dois, farofa e salada verde.'
+    // })
     hasImage('./assets/img/menu/menuDom.png', 'Domingo | Marmitaria Terezinha')
     break
   case 1:
@@ -65,10 +65,10 @@ switch (weekday) {
     break
   case 6:
     console.log('Hoje é sábado')
-    meal01.textContent = 'Peixe assado'
-    meal02.textContent = 'Frango cozido'
-    meal03.textContent = 'Frango ao molho'
-    meal04.textContent = 'Bisteca de porco assada'
+    meal01.textContent = 'Assado de panela'
+    meal02.textContent = 'Linguiça assada'
+    meal03.textContent = 'Peixe assado'
+    meal04.textContent = 'Bisteca de gado assada'
     hasImage('./assets/img/menu/menuSab.png', 'Sábado | Marmitaria Terezinha')
     break
   default:
