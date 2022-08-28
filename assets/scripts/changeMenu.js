@@ -15,9 +15,9 @@ switch (weekday) {
   case 0:
     console.log('Hoje é domingo!')
     meal01.textContent = 'Assado de panela'
-    meal02.textContent = 'Bisteca de porco assada'
-    meal03.textContent = 'Linguiça assada'
-    meal04.textContent = 'Fígado assado'
+    meal02.textContent = 'Linguiça assada'
+    meal03.textContent = 'Peixe assado'
+    meal04.textContent = 'Bisteca de gado assada'
     // allDescriptions.forEach(function (e) {
     //   e.textContent = 'Baião de dois, farofa e salada verde.'
     // })
