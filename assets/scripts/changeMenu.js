@@ -26,7 +26,7 @@ switch (weekday) {
   case 1:
     console.log('Hoje é segunda-feira!')
     meal01.textContent = 'Carne moída'
-    meal02.textContent = 'Peixe assado"'
+    meal02.textContent = 'Peixe assado'
     meal03.textContent = 'Bisteca de gado assada'
     meal04.textContent = 'Assado de panela'
     hasImage('./assets/img/menu/menuSeg.png', 'Segunda-feira | Marmitaria Terezinha')
