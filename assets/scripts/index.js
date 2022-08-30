@@ -81,7 +81,7 @@ pedidoWpp.addEventListener('click', function (e) {
         msgWhatsapp = window.encodeURIComponent(msgWhatsapp)
         pedidoWpp.href = `https://wa.me/${numberWhatsapp}?text=${msgWhatsapp}`
       }
-      
+        
       if (ele.id == 'marmita02') {
         console.log('Marmita 02')
         marmita = meals[1].textContent
