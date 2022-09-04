@@ -14,10 +14,10 @@ let menu = document.getElementById('menuDay')
 switch (weekday) {
   case 0:
     console.log('Hoje é domingo!')
-    meal01.textContent = 'Assado de panela'
-    meal02.textContent = 'Linguiça assada'
-    meal03.textContent = 'Peixe assado'
-    meal04.textContent = 'Bisteca de gado assada'
+    meal01.textContent = 'Carne de porco cozida'
+    meal02.textContent = 'Frango cozido'
+    meal03.textContent = 'Linguiça assada'
+    meal04.textContent = 'Fígado assado'
     // allDescriptions.forEach(function (e) {
     //   e.textContent = 'Baião de dois, farofa e salada verde.'
     // })
