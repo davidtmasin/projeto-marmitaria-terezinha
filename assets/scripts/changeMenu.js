@@ -58,9 +58,9 @@ switch (weekday) {
   case 5:
     console.log('Hoje é sexta-feira!')
     meal01.textContent = 'Assado de panela'
-    meal02.textContent = 'Frango cozido'
-    meal03.textContent = 'Carne de gado cozida'
-    meal04.textContent = 'Linguiça assada'
+    meal02.textContent = 'Carne de gado cozida'
+    meal03.textContent = 'Bife ao molho'
+    meal04.textContent = 'Bisteca de porco assada'
     hasImage('./assets/img/menu/menuSex.png', 'Sexta-feira | Marmitaria Terezinha')
     break
   case 6:
