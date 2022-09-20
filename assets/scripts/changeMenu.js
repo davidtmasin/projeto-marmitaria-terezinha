@@ -36,7 +36,7 @@ switch (weekday) {
     meal01.textContent = 'Frango ao molho'
     meal02.textContent = 'Carne de porco cozida'
     meal03.textContent = 'Assado de panela'
-    meal04.textContent = 'Fígado assado'
+    meal04.textContent = 'Bife ao molho'
     hasImage('./assets/img/menu/menuTer.png', 'Terça-feira | Marmitaria Terezinha')
     break
   case 3:
