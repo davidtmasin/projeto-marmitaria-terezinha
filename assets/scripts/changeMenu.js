@@ -49,9 +49,9 @@ switch (weekday) {
     break
   case 4:
     console.log('Hoje é quinta-feira!')
-    meal01.textContent = 'Carne cozida'
-    meal02.textContent = 'Bisteca de gado assada'
-    meal03.textContent = 'Bisteca de porco assada'
+    meal01.textContent = 'Carne porco ao molho'
+    meal02.textContent = 'Bife ao molho'
+    meal03.textContent = 'Carne de gado cozida'
     meal04.textContent = 'Fígado assado'
     hasImage('./assets/img/menu/menuQui.png', 'Quinta-feira | Marmitaria Terezinha')
     break
